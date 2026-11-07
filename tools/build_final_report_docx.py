@@ -108,6 +108,14 @@ def main():
     styles['Title'].font.size = Pt(19)
     styles['Title'].font.bold = True
     styles['Title'].paragraph_format.space_after = Pt(7)
+    title_ppr = styles['Title']._element.get_or_add_pPr()
+    for old in title_ppr.findall(qn('w:pBdr')):
+        title_ppr.remove(old)
+    title_border = OxmlElement('w:pBdr')
+    bottom = OxmlElement('w:bottom')
+    bottom.set(qn('w:val'), 'nil')
+    title_border.append(bottom)
+    title_ppr.append(title_border)
     styles['Subtitle'].font.size = Pt(10.5)
     styles['Subtitle'].paragraph_format.space_after = Pt(12)
     styles['Heading 1'].font.size = Pt(12)
