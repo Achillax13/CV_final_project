@@ -2,7 +2,7 @@
 
 Paths in this status report are relative to the project root.
 
-The experiments and final report are complete. An editable English Word counterpart is also available. All formal runs used Python 3.12, CUDA PyTorch 2.14.1+cu130, and an NVIDIA GeForce RTX 5060 Laptop GPU. The packages installed for those runs are recorded in `requirements-windows-lock.txt`; report generation additionally uses `tools/requirements-report.txt`.
+The experiments and final report are complete. An editable English Word counterpart and 16-slide English and Traditional Chinese presentations are also available. The slide-only presentation video is pending. All formal runs used Python 3.12, CUDA PyTorch 2.14.1+cu130, and an NVIDIA GeForce RTX 5060 Laptop GPU. The packages installed for those runs are recorded in `requirements-windows-lock.txt`; report generation additionally uses `tools/requirements-report.txt`.
 
 ## Completed experiments
 
@@ -21,6 +21,7 @@ Moving from 224 to 320 pixels improves small-defect AUPRO in all nine category-f
 ## Files and interpretation
 
 - Final report: `output/pdf/group6_patchcore_final_report.pdf`; editable Word version: `output/word/group6_patchcore_final_report.docx`.
+- Slides: `output/presentation/group6_patchcore_final_presentation.pptx` and `output/presentation/group6_patchcore_final_presentation_zh.pptx`.
 - Full Windows results: `results/runs_windows/formal/` on the original workstation only; the public repository contains compact summaries and figures.
 - Aggregate tables and plots: `results/summary_windows/`.
 - Paired comparisons: `results/comparisons/`.
