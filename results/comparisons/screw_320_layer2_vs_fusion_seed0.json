@@ -1,0 +1,53 @@
+{
+  "repeats": 1000,
+  "bins": 4096,
+  "seed": 2026,
+  "method": "paired stratified image percentile bootstrap; binned AUPRO@0.3",
+  "direction": "B minus A; positive favors B",
+  "groups": {
+    "all": {
+      "status": "ok",
+      "n_normal": 41,
+      "n_anomaly": 119,
+      "exact_aupro_a": 0.9800178587778874,
+      "exact_aupro_b": 0.9797443551056869,
+      "exact_difference_b_minus_a": -0.0002735036722004702,
+      "binned_point_estimates": [
+        0.9800176204016999,
+        0.9797439098093186
+      ],
+      "max_point_approximation_error": 4.4529636833434694e-07,
+      "ci95_b_minus_a": [
+        -0.0019613240965447366,
+        0.0014047548731300984
+      ],
+      "valid_repeats": 1000
+    },
+    "small": {
+      "status": "ok",
+      "n_normal": 41,
+      "n_anomaly": 118,
+      "exact_aupro_a": 0.9799669940074639,
+      "exact_aupro_b": 0.9797231454988339,
+      "exact_difference_b_minus_a": -0.00024384850863001795,
+      "binned_point_estimates": [
+        0.9799667477915841,
+        0.9797226990128144
+      ],
+      "max_point_approximation_error": 4.4648601948971134e-07,
+      "ci95_b_minus_a": [
+        -0.0019623960798752587,
+        0.0013430541545602385
+      ],
+      "valid_repeats": 1000
+    },
+    "large": {
+      "status": "insufficient_samples",
+      "n_normal": 41,
+      "n_anomaly": 1
+    }
+  },
+  "run_a": "results\\runs_windows\\formal\\screw\\size320\\layer2\\ratio0.1\\seed0",
+  "run_b": "results\\runs_windows\\formal\\screw\\size320\\fusion\\ratio0.1\\seed0",
+  "debug_subset": false
+}

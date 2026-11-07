@@ -1,0 +1,4 @@
+category,image_size,resize,n_train_normal,n_test_normal,n_test_small,n_test_large,n_crop_removed_defect,n_lost_all_after_transform
+screw,224,256,320,41,118,1,11,0
+capsule,224,256,219,23,85,24,3,0
+metal_nut,224,256,220,22,7,86,33,0

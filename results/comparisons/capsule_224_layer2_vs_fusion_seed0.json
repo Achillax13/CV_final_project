@@ -1,0 +1,66 @@
+{
+  "repeats": 1000,
+  "bins": 4096,
+  "seed": 2026,
+  "method": "paired stratified image percentile bootstrap; binned AUPRO@0.3",
+  "direction": "B minus A; positive favors B",
+  "groups": {
+    "all": {
+      "status": "ok",
+      "n_normal": 23,
+      "n_anomaly": 109,
+      "exact_aupro_a": 0.9314177273181103,
+      "exact_aupro_b": 0.9250163712035109,
+      "exact_difference_b_minus_a": -0.006401356114599466,
+      "binned_point_estimates": [
+        0.9314156638888645,
+        0.9250024569757814
+      ],
+      "max_point_approximation_error": 1.3914227729450168e-05,
+      "ci95_b_minus_a": [
+        -0.017054870056301723,
+        0.001659146699971553
+      ],
+      "valid_repeats": 1000
+    },
+    "small": {
+      "status": "ok",
+      "n_normal": 23,
+      "n_anomaly": 85,
+      "exact_aupro_a": 0.9739821462854067,
+      "exact_aupro_b": 0.97169854046331,
+      "exact_difference_b_minus_a": -0.002283605822096746,
+      "binned_point_estimates": [
+        0.973981823134259,
+        0.97169914863641
+      ],
+      "max_point_approximation_error": 6.081731001028601e-07,
+      "ci95_b_minus_a": [
+        -0.004072881139518009,
+        -0.0004935027575916354
+      ],
+      "valid_repeats": 1000
+    },
+    "large": {
+      "status": "ok",
+      "n_normal": 23,
+      "n_anomaly": 24,
+      "exact_aupro_a": 0.8408835947866206,
+      "exact_aupro_b": 0.8350034852430551,
+      "exact_difference_b_minus_a": -0.005880109543565437,
+      "binned_point_estimates": [
+        0.8408690405029065,
+        0.8349530649352829
+      ],
+      "max_point_approximation_error": 5.04203077722476e-05,
+      "ci95_b_minus_a": [
+        -0.0366252471636176,
+        0.019500339071549976
+      ],
+      "valid_repeats": 1000
+    }
+  },
+  "run_a": "results\\runs_windows\\formal\\capsule\\size224\\layer2\\ratio0.1\\seed0",
+  "run_b": "results\\runs_windows\\formal\\capsule\\size224\\fusion\\ratio0.1\\seed0",
+  "debug_subset": false
+}
